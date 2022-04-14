@@ -1,0 +1,42 @@
+# QuickStart Application Setup
+
+1) open WD self development in Tech is
+2) copy url of GitHub
+3) git clone using urls in your system
+4) now create repo for your project in your GitHub
+5) now git clone your repo using link to your desktop
+6) now copy everything from Django forum to your empty folder
+7) open your folder in vs code or terminal
+8) git status
+9) git add .
+10) git commit -am
+11) git status
+12) Git push
+13) to push maybe you need repo link if you doing It for the first time
+14) it will be there in developer setting
+15) after update of GitHub file
+16) Go to Heroku app
+    * create a new pipeline blank - name & connect your repo.
+    * In your production section - add app - create a new app
+	* 1. Projectname-frontend
+	* 2. Projectname-backend
+	* Click on project name to add build pack
+    * Move to Settings < reveal config vars < Add build packs
+    * Click on real config set key and value
+    * PROJECT_PATH value Backend
+	* For backend add build pack. backend  https://github.com/timanovsky/subdir-heroku-buildpack
+	* Now select & deploy
+	* For frontend add build pack. frontend
+	* https://github.com/timanovsky/subdir-heroku-buildpack
+	* https://github.com/mars/create-react-app-buildpack
+	* Add 2 build pack
+	* REACT_APP_API_BASE_URL value = posts url from browser
+	* REACT_API_ENVIRONMENT value = PRODUCTION
+	* Create superuser in Heroku
+	* In backend console
+	* Python manage.py createsuperuser
+	* Now deploy
+	* Make changes in settings.py add * and set true
+	* Remove last line
+	* Edit Api.js file in frontend
+	* Done
