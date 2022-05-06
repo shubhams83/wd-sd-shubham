@@ -13,7 +13,7 @@ class Post(models.Model):
         'Body', blank=False, null=False, db_index=True
     )
     image = CloudinaryField(
-        'image', blank=True, null=True
+        'image'
     )
     created_at = models.DateTimeField(
         'Created Datetime', blank=True, auto_now_add=True
